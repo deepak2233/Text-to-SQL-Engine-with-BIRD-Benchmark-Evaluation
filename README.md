@@ -2,6 +2,7 @@
 
 This project implements a Text-to-SQL engine that converts natural language queries into SQL queries using a GPT-2 model. The engine can be evaluated against the BIRD benchmark to measure its accuracy and performance.
 
+---
 ## Features
 
 - **Natural Language to SQL Conversion:** Generates SQL queries from natural language inputs using GPT-2.
@@ -9,6 +10,7 @@ This project implements a Text-to-SQL engine that converts natural language quer
 - **BIRD Benchmark Evaluation:** Compares generated SQL queries against a set of benchmark queries from the BIRD dataset.
 - **Interactive Streamlit Application:** Provides an easy-to-use interface for testing queries and evaluating the model.
 
+---
 ## Directory Structure
 
       
@@ -36,7 +38,7 @@ This file lists all the Python packages required for your project.
 - BIRD Questions (bird_questions.json):
 This JSON file contains the questions and expected SQL queries that make up the BIRD benchmark. Ensure this file is in the root directory of your project.
 
-
+---
 ## Installation
 
 - **Clone the Repository:**
@@ -48,3 +50,19 @@ This JSON file contains the questions and expected SQL queries that make up the 
   pip install -r requirements.txt  
   
   streamlit run text_to_sql
+
+---
+
+## Result
+
+<p align = 'left'>
+  <img src = '.utils/Screenshot 2024-08-25 161936.png' align = 'center'>
+</p>
+
+<p align = 'left'>
+  <img src = '.utils/Screenshot 2024-08-25 161706.png' align = 'center'>
+</p>
+
+<p align = 'left'>
+  <img src = '.utils/Screenshot 2024-08-25 161738.png' align = 'center'>
+</p>
