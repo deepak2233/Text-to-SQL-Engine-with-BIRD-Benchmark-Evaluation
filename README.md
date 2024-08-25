@@ -28,10 +28,10 @@ A script dedicated to handling the loading and processing of the BIRD benchmark 
 - Dependencies (requirements.txt):
 This file lists all the Python packages required for your project.
 
-      ```streamlit
+      streamlit
       transformers
       sqlglot
-      sqlite3```
+      sqlite3
 
 - BIRD Questions (bird_questions.json):
 This JSON file contains the questions and expected SQL queries that make up the BIRD benchmark. Ensure this file is in the root directory of your project.
@@ -47,4 +47,4 @@ This JSON file contains the questions and expected SQL queries that make up the 
 
   pip install -r requirements.txt  
   
-  streamlit run text_to_sql ```
+  streamlit run text_to_sql
