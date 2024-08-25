@@ -1,0 +1,122 @@
+[
+    {
+        "question": "List the names of all employees.",
+        "sql": "SELECT name FROM employees;"
+    },
+    {
+        "question": "What is the average salary of employees in the Sales department?",
+        "sql": "SELECT AVG(salary) FROM employees WHERE department = 'Sales';"
+    },
+    {
+        "question": "How many employees have a salary greater than 50,000?",
+        "sql": "SELECT COUNT(*) FROM employees WHERE salary > 50000;"
+    },
+    {
+        "question": "What are the names and ages of all employees in the IT department?",
+        "sql": "SELECT name, age FROM employees WHERE department = 'IT';"
+    },
+    {
+        "question": "List all departments with more than 10 employees.",
+        "sql": "SELECT department FROM employees GROUP BY department HAVING COUNT(*) > 10;"
+    },
+    {
+        "question": "Find the employee with the highest salary.",
+        "sql": "SELECT name FROM employees ORDER BY salary DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the total salary expense for the company?",
+        "sql": "SELECT SUM(salary) FROM employees;"
+    },
+    {
+        "question": "List the names of employees who were hired after 2020.",
+        "sql": "SELECT name FROM employees WHERE hire_date > '2020-01-01';"
+    },
+    {
+        "question": "How many employees work in the HR department?",
+        "sql": "SELECT COUNT(*) FROM employees WHERE department = 'HR';"
+    },
+    {
+        "question": "What is the average age of employees?",
+        "sql": "SELECT AVG(age) FROM employees;"
+    },
+    {
+        "question": "List the names and salaries of employees in the Marketing department.",
+        "sql": "SELECT name, salary FROM employees WHERE department = 'Marketing';"
+    },
+    {
+        "question": "Find all employees who have a manager.",
+        "sql": "SELECT name FROM employees WHERE manager_id IS NOT NULL;"
+    },
+    {
+        "question": "What is the maximum salary in the Engineering department?",
+        "sql": "SELECT MAX(salary) FROM employees WHERE department = 'Engineering';"
+    },
+    {
+        "question": "List the names of employees who do not have a manager.",
+        "sql": "SELECT name FROM employees WHERE manager_id IS NULL;"
+    },
+    {
+        "question": "How many employees were hired in 2019?",
+        "sql": "SELECT COUNT(*) FROM employees WHERE hire_date BETWEEN '2019-01-01' AND '2019-12-31';"
+    },
+    {
+        "question": "Find the name and department of the employee with the lowest salary.",
+        "sql": "SELECT name, department FROM employees ORDER BY salary ASC LIMIT 1;"
+    },
+    {
+        "question": "What is the total number of employees in the company?",
+        "sql": "SELECT COUNT(*) FROM employees;"
+    },
+    {
+        "question": "List the departments in the company.",
+        "sql": "SELECT DISTINCT department FROM employees;"
+    },
+    {
+        "question": "How many employees are older than 40?",
+        "sql": "SELECT COUNT(*) FROM employees WHERE age > 40;"
+    },
+    {
+        "question": "List the names of all employees in the Finance department.",
+        "sql": "SELECT name FROM employees WHERE department = 'Finance';"
+    },
+    {
+        "question": "Find the average salary of employees in each department.",
+        "sql": "SELECT department, AVG(salary) FROM employees GROUP BY department;"
+    },
+    {
+        "question": "List the names of employees who joined the company in the last 5 years.",
+        "sql": "SELECT name FROM employees WHERE hire_date >= DATE('now', '-5 years');"
+    },
+    {
+        "question": "How many employees earn more than the average salary?",
+        "sql": "SELECT COUNT(*) FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);"
+    },
+    {
+        "question": "What is the name of the oldest employee?",
+        "sql": "SELECT name FROM employees ORDER BY age DESC LIMIT 1;"
+    },
+    {
+        "question": "Find the total number of employees in each department.",
+        "sql": "SELECT department, COUNT(*) FROM employees GROUP BY department;"
+    },
+    {
+        "question": "List the names of employees who have been with the company for more than 10 years.",
+        "sql": "SELECT name FROM employees WHERE hire_date <= DATE('now', '-10 years');"
+    },
+    {
+        "question": "What is the youngest employee's age?",
+        "sql": "SELECT MIN(age) FROM employees;"
+    },
+    {
+        "question": "Find the employee who has been with the company the longest.",
+        "sql": "SELECT name FROM employees ORDER BY hire_date ASC LIMIT 1;"
+    },
+    {
+        "question": "List the names of employees who work in multiple departments.",
+        "sql": "SELECT name FROM employees GROUP BY name HAVING COUNT(DISTINCT department) > 1;"
+    },
+    {
+        "question": "What is the average tenure of employees in the Sales department?",
+        "sql": "SELECT AVG(JULIANDAY('now') - JULIANDAY(hire_date)) / 365 FROM employees WHERE department = 'Sales';"
+    }
+]
