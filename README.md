@@ -56,13 +56,13 @@ This JSON file contains the questions and expected SQL queries that make up the 
 ## Result
 
 <p align = 'left'>
-  <img src = '.utils/Screenshot 2024-08-25 161936.png' align = 'center'>
+  <img src = 'utils/Screenshot 2024-08-25 161936.png' align = 'center'>
 </p>
 
 <p align = 'left'>
-  <img src = '.utils/Screenshot 2024-08-25 161706.png' align = 'center'>
+  <img src = 'utils/Screenshot 2024-08-25 161706.png' align = 'center'>
 </p>
 
 <p align = 'left'>
-  <img src = '.utils/Screenshot 2024-08-25 161738.png' align = 'center'>
+  <img src = 'utils/Screenshot 2024-08-25 161738.png' align = 'center'>
 </p>
